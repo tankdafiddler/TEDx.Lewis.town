@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEDxLewistown</title>
+    <meta name="description"
+        content="The online home of the TEDxLewistown event, to be held in Central Montana, September 2019.">
+    <meta name="keywords"
+        content="TEDxLewistown, TEDx, Central, Montana, Lewistown, Fergus, Learning, Knowledge, Community, Teach, Learn, help, gather, engage, inspire">
+    <meta name="author" content="Logan Smith">
+    <meta name="email" content="webmaster@faergus.com">
+    <link rel="icon" href="https://storage.googleapis.com/tedx.lewis.town/FergusCounty.png">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/abibas" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            $(".topfade1").css("opacity", 1 - $(window).scrollTop() / 100);
+        });
+        $(window).scroll(function () {
+            $(".header1").css("opacity", 0 + $(window).scrollTop() / 250);
+        });
+    </script>
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header1 {
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: lightgrey;
+            z-index: 100;
+        }
+
+        .header1 a {
+            color: rgb(58, 58, 58);
+        }
+
+        #headerlogo {
+            position: relative;
+        }
+
+        #introdiv {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin-top: 27.5vh;
+            height: 57.5vh;
+            width: 100vw;
+            text-align: center;
+        }
+
+        #TEDxLewistownLogo {
+            height: 20vh;
+            width: auto;
+            margin: 0;
+            opacity: 1;
+        }
+
+        #scrollicondiv {
+            margin-top: 30vh;
+            height: 15vh;
+            width: 100vw;
+            text-align: center;
+        }
+
+        #scrolldown {
+            height: 7vh;
+            width: auto;
+            cursor: default;
+        }
+
+        main {
+            margin-top: 105vh;
+            width: 100%;
+            z-index: 90;
+        }
+
+        .themeelementbar {
+            position: relative;
+            left: 5%;
+            width: 90%;
+            height: 5px;
+            border: 0px solid rgb(39, 39, 39);
+            border-radius: 2.5px;
+            background-color: rgb(39, 39, 39);
+        }
+
+        .bodytext {
+            text-align: center;
+            margin: 15vh 2vw;
+        }
+
+        .standout {
+            font-weight: 700;
+            color: #e62b1e;
+            margin-top: 5vh;
+        }
+
+        .jumboimg {
+            height: 45vh;
+            min-height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #img1 {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ec/2nd_Annual_TEDx_GMU_Conference_%288643326773%29.jpg");
+
+        }
+
+        #img2 {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Elizabeth_Stokoe_at_TEDx_Bermuda.jpg");
+        }
+
+        footer {
+            width: 100vw;
+            margin-top: 20vh;
+            background-color: rgb(39, 39, 39);
+            color: white;
+        }
+
+        #faerguslink {
+            padding: 10vh 0;
+            text-align: center;
+        }
+
+        #faerguslink a {
+            font-family: Montserrat, sans-serif;
+            color: #e62b1e;
+        }
+
+        #faerguslink a span {
+            color: #e62b1e;
+            font-family: Abibas, serif;
+            font-size: 1.5em;
+            position: relative;
+            top: .5px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            #TEDxLewistownLogo {
+                height: auto;
+                width: 80vw;
+                margin: 0;
+                opacity: 1;
+            }
+
+            .header1 {
+                height: 60px;
+            }
+
+            #scrollicondiv {
+                margin-top: 45vh;
+            }
+
+            .bodytext {
+                margin: 10vh 9vw;
+            }
+
+            .jumboimg {
+                height: 10vh;
+                min-height: 140px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+
+            .navstretch {
+                background-color: white;
+                width: 100%;
+                padding-left: 5vw;
+                position: fixed;
+                top: 60px;
+                left: 0px;
+            }
+
+            .ztop {
+                z-index: 110;
+            }
+
+            #faerguslink a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="header1 navbar navbar-expand-lg">
+        <a href="#top" class="navbar-brand"><img src="https://storage.googleapis.com/tedx.lewis.town/TEDx_Lewistown_Logo2.png" height="39px" width="auto"
+                id="headerlogo"></a>
+        <button class="navbar-toggler ztop" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="https://storage.googleapis.com/tedx.lewis.town/BurgerMenu(1).png"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navstretch">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.ted.com/about/our-organization" target="_blank">What is
+                        TED?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#partners">Partner</a>
+                        <a class="dropdown-item" href="#volunteers">Volunteer</a>
+                        <a class="dropdown-item" href="#speakers">Speakers</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="top">
+        <div id="introdiv" class="topfade1">
+            <img src='https://storage.googleapis.com/tedx.lewis.town/TEDx_Lewistown_Logo.png' id="TEDxLewistownLogo"
+                alt='TEDxLewistown logo.  TED "Ex" Lewistown is an independently organized TED event, to be held in September 2019 in Central Montana.'>
+            <div class="container" id="scrollicondiv">
+                <img src="https://storage.googleapis.com/tedx.lewis.town/ScrollDown(1).png" id="scrolldown" alt="Scroll down">
+            </div>
+        </div>
+    </section>
+    <main class="container">
+        <div class="themeelementbar"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="Jumbotron bodytext">
+                    <h4>TEDxLewistown is an event designed to support Central Montana by providing a
+                        platform for local individuals to listen, learn, and network with other members of the
+                        community who want to make a difference.</h4>
+                    <h2 class="standout">Join us for a day of inspiration and challenge, September 6th, 2019.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <a href="https://commons.wikimedia.org/wiki/File:2nd_Annual_TEDx_GMU_Conference_(8643326773).jpg"
+                target="_blank" class="col-6 jumboimg" id="img1" style="cursor: default;"
+                alt="Producer Joe Renaud opening the second annual TEDx conference at George Mason University.">
+            </a>
+            <a href="https://commons.wikimedia.org/wiki/File:Elizabeth_Stokoe_at_TEDx_Bermuda.jpg" target="_blank"
+                class="col-6 jumboimg" id="img2" style="cursor: default;"
+                alt="Liz Stokoe speaking on stage at TEDxBermuda.">
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="Jumbotron bodytext">
+                    <h4>We are currently in the planning stage of this event. We are determining the venue, and still
+                        need to book staff, speakers and volunteers.</h4>
+
+                    <div class="themeelementbar" style="margin-top: 10vh;" id="partners"></div>
+                    <div class="bodytext">
+                        <h4 class="standout">If your business is interested in being a partner of the TEDxLewistown
+                            event, please
+                            send a message to</h4>
+                        <h4
+                            style="user-select: all; text-decoration: underline; color: black; font-weight: 500; width: 100%;">
+                            PartnerTEDx@lewis.town</h4>
+                    </div>
+
+                    <div class="themeelementbar" id="volunteers"></div>
+                    <div class="bodytext">
+                        <h4 class="standout">If you're interested in volunteering at the TEDxLewistown event, please
+                            send a message to</h4>
+                        <h4
+                            style="user-select: all; text-decoration: underline; color: black; font-weight: 500; width: 100%;">
+                            VolunteerTEDx@lewis.town</h4>
+                    </div>
+
+                    <div class="themeelementbar" id="speakers"></div>
+                    <div class="bodytext">
+                        <h4 class="standout">If you're interested in being a speaker at the TEDxLewistown event, please
+                            send a message to</h4>
+                        <h4
+                            style="user-select: all; text-decoration: underline; color: black; font-weight: 500; width: 100%;">
+                            SpeakerTEDx@lewis.town</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4" id="faerguslink">
+                    <h4>This website provided by</h4>
+                    <a href="https://www.faergus.com" target="_blank"><span>F&#230;rgus</span><br>Digital Business
+                        Solutions</a>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
